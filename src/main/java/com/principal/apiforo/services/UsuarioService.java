@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.principal.apiforo.dto.usuario.UsuarioRequestDTO;
@@ -24,13 +25,16 @@ public class UsuarioService implements IServices<UsuarioRequestDTO, UsuarioRespo
     @Autowired
     private PerfilRepository perfilRepository;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     private ModelMapper modelMapper = new ModelMapper();
 
     @Transactional
     public UsuarioResponseDTO actualizar(Long id, UsuarioRequestDTO nuevosDatos) {
         Usuario usuario = usuarioRepository.findById(id).orElseThrow(() -> new EntityNotFoundException());
         Perfil perfil = perfilRepository.findById(nuevosDatos.getPerfil().getId()).orElseThrow(() -> new EntityNotFoundException());
-        usuario.setContrasena(nuevosDatos.getContrasena());
+        usuario.setContrasena(passwordEncoder.encode(nuevosDatos.getContrasena()));
         usuario.setCorreoElectronico(nuevosDatos.getCorreoElectronico());
         usuario.setNombre(nuevosDatos.getNombre());
         usuario.setPerfil(perfil);
@@ -49,6 +53,7 @@ public class UsuarioService implements IServices<UsuarioRequestDTO, UsuarioRespo
 
     public UsuarioResponseDTO guardar(UsuarioRequestDTO nuevoRegistro) {
         Usuario usuario = modelMapper.map(nuevoRegistro, Usuario.class);
+        usuario.setContrasena(passwordEncoder.encode(nuevoRegistro.getContrasena()));
         return modelMapper.map(usuarioRepository.save(usuario), UsuarioResponseDTO.class);
     }
 
