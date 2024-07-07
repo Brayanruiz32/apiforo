@@ -3,6 +3,8 @@ package com.principal.apiforo.entities;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -50,7 +52,7 @@ public class Topico {
     @ManyToOne
     @JoinColumn(name = "curso_id")
     private Curso curso;
-
+    @JsonManagedReference
     @OneToMany(mappedBy = "topico", fetch = FetchType.EAGER)
     private List<Respuesta> respuestas;
 

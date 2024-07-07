@@ -44,10 +44,4 @@ public class UsuarioController implements IControllers<UsuarioRequestDTO, Usuari
     public ResponseEntity<List<UsuarioResponseDTO>> listar() {
         return new ResponseEntity<>(usuarioService.listar(), HttpStatus.OK);
     }
-
-
-    
-
-
-
 }

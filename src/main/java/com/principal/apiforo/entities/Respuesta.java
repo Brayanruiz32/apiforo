@@ -1,6 +1,9 @@
 package com.principal.apiforo.entities;
 
 import java.time.LocalDateTime;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -29,7 +32,7 @@ public class Respuesta {
 
     @Column(name = "fecha_creacion")
     private LocalDateTime fechaCreacion;
-
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "topico_id")
     private Topico topico;
