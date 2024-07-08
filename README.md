@@ -2,7 +2,7 @@
 ![Api Foro](src/main/resources/foro.jpg)
 
 ## 📖 Descripción
-El proyecto se basa principalmente en la logica de negocio que sucede detras de un foro, haciendo referencia por ejemplo al foro de Alura. Un excelente proyecto y completo que abarca el control de versiones de las modificaciones a la base de datos hasta brindarle una capa de seguridad, incluyendo su implementacion de documentacion de la API. 
+El proyecto se basa principalmente en la logica de negocio que sucede detras de un foro, haciendo referencia por ejemplo al foro de Alura. Un excelente proyecto y completo que abarca el control de versiones de las modificaciones a la base de datos hasta brindarle una capa de seguridad, incluyendo su implementacion de documentacion de la API. Para más detalles sobre cómo utilizar la API, consulta la documentación completa probando la API. Si tienes preguntas o necesitas soporte, no dudes en contactarme como creador del proyecto.
 ## 🔨 Funcionalidades
 - `Buscar por topicos`:Permite a los usuarios buscar tópicos específicos utilizando criterios de búsqueda como el nombre del curso y año.
 - `Listar topicos`: Devuelve una lista completa de todos los tópicos disponibles en la base de datos.
