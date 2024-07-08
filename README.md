@@ -15,8 +15,7 @@ Hay muchisimas funciones más, definidas
 ## 🕹️ Uso
 La api es bastante intuitiva debido a que esta propiamente documentada mediante Swagger, y al tener una capa de seguridad extra, esta permitida a enviar tokens mediante su interfaz para las consultas
 ![Api UI](src/main/resources/apiforo.png)
-Te invito a probar las demás funcionalidades y a sumergirt
-e en el tema por ti mismo 🤟
+Te invito a probar las demás funcionalidades y a sumergirte en el tema por ti mismo 🤟
 ## ✔️ Tecnologias
 Hice uso de las siguientes tecnologias para lograr la construccion de este proyecto.
 - [ModelMapper](https://modelmapper.org/)
