@@ -1,5 +1,5 @@
 # API FORO
-![Api Foro](ruta/a/la/imagen)
+![Api Foro](src/main/resources/foro.jpg)
 
 ## 📖 Descripción
 El proyecto se basa principalmente en la logica de negocio que sucede detras de un foro, haciendo referencia por ejemplo al foro de Alura. Un excelente proyecto y completo que abarca el control de versiones de las modificaciones a la base de datos hasta brindarle una capa de seguridad, incluyendo su implementacion de documentacion de la API. 
