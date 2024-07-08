@@ -17,7 +17,7 @@ import com.principal.apiforo.dto.categoria.CategoriaResponseDTO;
 import com.principal.apiforo.services.CategoriaService;
 
 @RestController
-@RequestMapping("/categoria/create")
+@RequestMapping("/categoria")
 public class CategoriaController implements IControllers<CategoriaRequestDTO, CategoriaResponseDTO> {
 
     @Autowired

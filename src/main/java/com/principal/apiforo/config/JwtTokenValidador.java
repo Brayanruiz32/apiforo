@@ -1,7 +1,6 @@
 package com.principal.apiforo.config;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Collection;
 
 
@@ -14,7 +13,6 @@ import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.principal.apiforo.utils.JwtUtils;
 
