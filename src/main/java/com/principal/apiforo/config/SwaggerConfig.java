@@ -15,15 +15,11 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
 @Configuration
 @OpenAPIDefinition(
         info = @Info(
-                title = "API CLUBES",
-                description = "Our app provides a concise listing of football team names",
-                termsOfService = "www.unprogramadornace.com/terminos_y_condiciones",
+                title = "API FORO",
+                description = "En esta API se puede hacer uso de las operaciones basicas de un foro, manejando tanto perfiles como usuarios, categorias, etc. Los parametros y campos necesarios se hacen evidencia en la API.",
                 version = "1.0.0",
                 contact = @Contact(
-                        name = "Santiago Perez",
-                        url = "https://unprogramadornace.com",
-                        email = "santy@mail.com"
-                ),
+                        name = "Brayan Ruiz Marreros"),
                 license = @License(
                         name = "Standard Software Use License for UnProgramadorNace",
                         url = "www.unprogramadornace.com/licence"
